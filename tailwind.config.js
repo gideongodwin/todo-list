@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        "bauman": ['Baumans', 'cursive'],
+        "signika":['Signika Negative', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
