@@ -9,38 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!-- #3c1053 -->
-<body class="bg-[#1D1F23]">
+<body class="bg-[#240b36] text-white">
     
-    <div class="w-full h-44 text-white  pt-8 ">
-    <p class="font-bauman text-center text-5xl pb-4">TODO LIST</p>
+    <div class="w-full h-full  pt-8 pb-4 ">
+    <p class="font-kanit text-center text-5xl pb-4">TODO LIST</p>
 
     <!-- ADD TASK -->
- <div class="w-full h-full  flex justify-center">
-    <div class="w-[35rem]  h-16 bg-gray-600 rounded-xl flex items-center pr-4">
-        <input type="text" placeholder="What are we doing today?" class="w-full h-full text-lg bg-transparent px-4 outline-none font-signika placeholder:text-lg placeholder:text-gray-400 placeholder:font-signika placeholder:tracking-wider"> 
-        <i class="cursor-pointer text-4xl text-yellow-500 fa-solid fa-circle-plus"></i>
+ <div class=" flex items-center justify-center xs:px-2">
+    <div class="w-[35rem]  h-16 bg-[#200122] rounded-xl flex items-center pr-4">
+        
+        <input id="input-field" type="text" placeholder="What are we doing today?" class="w-full h-full text-lg bg-transparent px-4 outline-none font-signika  placeholder:text-gray-400 placeholder:font-signika placeholder:tracking-wider"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="add-btn w-8 h-8 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+          
     
     
     </div>
  </div>
-    <!-- <p class="font-signika  text-center text-3xl">Friday,November 4, 2022</p> -->
 
     </div>
+
+<div class=" w-full h-full flex justify-center xs:px-2">
+    <div class="w-[35rem] h-16 rounded-xl flex  items-center justify-between font-semibold font-bauman">
+        <p class="text-3xl">My Tasks</p>
+       
+    </div>
+</div>
 
     <!-- Tasks -->
+    
+<div class="w-full h-full flex justify-center xs:px-2">
+    
+    <div class="tasks  xs:w-full "> </div>
 
-    <div class="w-full h-full flex justify-center items-center flex-col">
+</div>
 
-        <div class="w-[35rem]  h-16  rounded-xl flex  items-center text-[#d9a7c7] text-4xl font-semibold font-signika">
-            My Tasks
-        </div>
-
-        <div class="border border-yellow-500 w-[35rem]  h-16  rounded-xl flex  items-center text-[#d9a7c7] text-4xl font-semibold font-signika">
-            My Tasks
-        </div>
-
-    </div>
-
-
+ 
+<script src="/src/main.js"></script>
 </body>
 </html>
